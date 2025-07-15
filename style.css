@@ -17,7 +17,6 @@ html{
 body{
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
-    border: 3px solid red;
 }
  
   
@@ -25,7 +24,7 @@ body{
 /* ############### utility classes ################ */
 .container{
     max-width: 1200px;
-    width: 90%;
+    width: 70%;
     margin: auto;
     overflow-x: hidden;
 }
@@ -61,7 +60,7 @@ body{
 
 .btn-sec{
     background: #263640;
-    padding: 1em 0.5em 3em 0.5em;
+    padding: 1em 0;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -135,9 +134,9 @@ body{
 .section1{
     padding-top: 100px;
     padding-top: 10rem;
-        background: #E4E3E8 url('./images/bg-image.png') no-repeat center center;
-        background-size: cover;
-        min-height: 90vh;
+    background: #E4E3E8 url('./images/bg-image.png') no-repeat center center;
+    background-size: cover;
+    max-height: 95vh;
 }
 .main{
     height: 100%;
@@ -151,15 +150,15 @@ body{
     width:  60%;
     max-height: 100%;
     position: relative;
-    margin-top: 10rem;
-    font-size: 1.5rem;
+    margin-top: 4rem;
+    font-size: 1.2rem;
 }
 
 
 .main-hding{
     align-self: center;
     font-weight: 500;
-    font-size: 4.8rem;
+    font-size: 3.5rem;
     color: #263640;
     margin-top: 2rem;
 }
@@ -177,7 +176,7 @@ body{
 .button{
     display: flex;
     width: 500px;
-    margin: 30px 0;
+    margin-bottom: 5px;
     height: 100%;
 }
 .button a{
@@ -186,7 +185,7 @@ body{
 }
 
 .button i{
-    margin: 1rem 0.5rem 1rem 2rem;
+    margin: 1rem 0.5rem;
 }
 .button span{
     display: inline-block;
@@ -238,7 +237,7 @@ body{
 
 /* ######### Achievements Section Styling ########### */
 .section2{
-    padding-top: 5rem;
+    padding-top: 10rem;
 }
 
 .achievements{
@@ -247,25 +246,26 @@ body{
     align-content: space-between;
 }
 .details{
-    padding-right: 20rem;
-    width: 50%;
-    height: 20vh;
+    padding-top: 3rem;
+    padding-right: 5rem;
+    width: 40%;
+    height: 40vh;
 }
 .details h2{
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 600;
 }
 .details p{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400;
 }
 .counts{
-    width: 50%;
-    padding: 0 10px;
-    height: 20vh;
+    width: 60%;
+    /* padding: 0 10px; */
+    height: 40vh;
     display: grid;
     grid-template-columns: repeat(2, 300px);
-    gap: 10px 10px;
+    gap: 10px 0;
 }
 
 .counts img{
@@ -283,15 +283,15 @@ body{
     flex-wrap: wrap;
 }
 .count-detail{
-    padding-left: 1rem;
+    padding-left: 0.5rem;
 }
 .count-detail p{
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 .count-detail span{
     font-weight: 600;
-    font-size: 3.2rem;
+    font-size: 3rem;
 }
 
 /* ########## clients section styling ############ */
@@ -348,38 +348,41 @@ body{
 }
 .articles{
     display: flex;
-    flex-wrap: wrap; 
     justify-content: space-between;
 }
 .article{
-    flex-basis: 350px;
+    flex-basis: 200px;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     padding-bottom: 5px;
+    max-width: 30%;
+    /* flex: 1 1 300px; */
+    box-shadow: none;
 }
+
 .article img{
     display: block;
     width: 100%;
     margin: auto;
-    height: 40vh;
+    height: 200px;
     object-fit: cover;
     object-position: center;
     margin-bottom: 1rem;
+    
 }
 .article h3{
     font-weight: 600;
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     margin-bottom: 1rem;
 }
 .article p{
-    margin-bottom: 1rem;
+    margin-bottom: 0..8rem;
     color: #929A9F;
 }
 .article a{
     color: #FF9900;
     text-decoration: none;
 }
-
 /* ########### section5 styling ########## */
 .section5{
     padding: 3rem 0;
@@ -399,7 +402,7 @@ body{
 .construction img{
     display: block;
     width: 100%;
-    max-height: 400px;
+    max-height: 300px;
     border-radius: 10px;
     margin: auto;
     object-fit: cover;
@@ -413,7 +416,7 @@ body{
 }
 .section6 h2{
     text-align: center;
-    font-size: 3.2rem;
+    font-size: 3rem;
     font-weight: 700;
 }
 .client-words{
@@ -421,7 +424,7 @@ body{
     flex-wrap: wrap;
     background: #fff;
     padding: 4rem;
-    margin: 5rem 10rem;
+    margin: 2rem 10rem;
     position: relative;
     
 }
@@ -429,8 +432,8 @@ body{
     padding-left: 1rem;
     flex: 1 1 200px;
     font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 32px;
+    font-size: 1.5rem;
+    line-height: 30px;
 }
 .client-words img{
     display: block;
@@ -502,7 +505,7 @@ body{
 }
 .cta img{
     width: 70%;
-    height: 40vh;
+    height: 60vh;
     object-fit: cover;
     object-position: left;
 }
@@ -668,23 +671,25 @@ body{
     }
     .footer .footer-content{
         flex-direction: column;
-       align-content: center;
-       justify-content: center;
-       padding-left: 10em;
+       /* align-content: center;
+       justify-content: center; */
     }
     .footer .footer-content .left-sec{
         padding-bottom: 2rem;
     }
     .footer .footer-content .right-sec{
-        width: 100%;
         flex-direction: row;
+        width: 100%;
+    }
+    .link-row1{
+        justify-content: center;
     }
 }
 @media (max-width: 900px){
     .section4 .article{
         flex-direction: column;
         flex-wrap: wrap;
-        flex-basis: 100%;
+        width: 100%;
         display: block;
         
     }
@@ -819,7 +824,7 @@ body{
     
     .showcase-cont p {
         width: 100%;
-        margin: 0 auto 2rem;
+        margin: 0 auto;
     }
     
     .button {
@@ -835,17 +840,19 @@ body{
     .testimonial {
         position: static;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
+        justify-content: center;
     }
     
     .rating1, .rating2 {
         position: static;
         transform: none;
         margin: 1rem 0;
-        width: 80%;
+        width: 50%;
     }
     
     .section2 .achievements{
+        padding-top: 10rem;
         flex-direction: column;
     }
     .section2 .achievements .details{
@@ -879,6 +886,7 @@ body{
     
     .article {
         margin-bottom: 4rem;
+        max-width: 100%;
     }
     
     .cons-content h2 {
