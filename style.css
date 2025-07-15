@@ -17,7 +17,7 @@ html{
 body{
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
-
+    border: 3px solid red;
 }
  
   
