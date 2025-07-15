@@ -708,7 +708,6 @@ body{
         font-size: 55%;
     }
     
-    /* Navbar Adjustments */
     .navbar-cont input[type='checkbox'],
     .hamburger{
         display: block;
@@ -811,11 +810,14 @@ body{
         padding-top: 15rem;
         text-align: center;
     }
+    .section1 .testimonial{
+        padding-bottom: 5rem;
+    }
     
     .showcase-cont {
         width: 100%;
         text-align: center;
-        margin-top: 3rem;
+        margin-top: 1rem;
     }
     
     .main-hding {
@@ -861,18 +863,21 @@ body{
         padding-right: 0;
     }
     .section2 .achievements .counts{
+        height: 50vh;
         width: 100%;
         justify-content: space-evenly;
-        margin-left: 0;
-        grid-template-columns: repeat(2, 1fr);
+        margin: 0 15rem;
+        grid-template-columns: repeat(1, 1fr);
+        align-content: center;
     }
     
     .section3 h2 {
         padding: 3rem 0;
     }
     
-    .clients {
+    .section3 .clients {
         flex-direction: column;
+        justify-content: space-evenly;
     }
     
     .lg {
