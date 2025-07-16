@@ -824,7 +824,7 @@ p {
 } */
 
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
     html {
         font-size: 55%;
     }
@@ -997,8 +997,9 @@ p {
     .rating2 {
         position: static;
         transform: none;
-        margin: 1rem 0;
-        width: 50%;
+        margin: 1rem;
+        margin-right: 5rem;
+        width: 100%;
     }
 
     .section2 {
@@ -1051,7 +1052,7 @@ p {
     .section3 .clients {
         display: flex;
         width: 100%;
-        flex-direction: row;
+        flex-direction: column;
         /* margin:0 2rem; */
         padding: 0 10rem;
         justify-content: center;
@@ -1065,7 +1066,7 @@ p {
     .section3 .lg {
         margin: 1rem 0;
         justify-content: center;
-        width: 50%;
+        width: 100%;
     }
 
     .section4 .articles {
@@ -1078,11 +1079,11 @@ p {
 
     .section6 .client-images {
         flex-direction: column;
-        /* margin-left: 0; */
+        margin-left: 0;
     }
 
     .section6 .client-images .client1 {
-        padding-left: 2rem;
+        /* padding-left: 2rem; */
         padding-bottom: 4rem;
         width: 100%;
     }
@@ -1093,17 +1094,22 @@ p {
 
     .section6 .client1 .client1-details {
         padding: 0;
-        /* margin: 0; */
+        margin: 0;
     }
 
     .section6 .client-container {
+        margin: auto;
+        
         width: 100%;
-        margin: 0;
     }
 
     .section6 .client-words {
         padding: 1rem;
-        width: 80%;
+        margin-left: 3rem;
+        text-align: center;
+        justify-content: center;
+        height: auto;
+        flex-direction: column;
     }
 
     .footer .footer-content {
@@ -1135,11 +1141,17 @@ p {
 
     .footer .right-sec {
         flex-direction: column;
+        align-items: center;
         width: 100%;
+        margin-left: 4rem;
+    }
+    .footer .right-sec .p1{
+        width: 100%;
+        font-size: 2.5rem;
     }
 
     .footer .right-sec-elem {
-        width: 50%;
+        width: 100%;
         flex-direction: row;
     }
 
