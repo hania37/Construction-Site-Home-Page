@@ -237,7 +237,7 @@ body{
 
 /* ######### Achievements Section Styling ########### */
 .section2{
-    padding-top: 10rem;
+    padding-top: 15rem;
 }
 
 .achievements{
@@ -310,23 +310,25 @@ body{
 .clients{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
 }
 .client-logo-sym img{
-    width: 50%;
+    width: 100%;
     margin: 1rem 0;
     display: block;
     width: auto;
     height: 50px;
     object-fit: cover;
     object-position: center;
+    padding-left: 1rem;
 }
 
 .lg{
-    max-width: 100%;
+    width: 20%;
     margin: auto;
     display: flex;
-    padding-left:30px;
+    /* padding-left:30px; */
     margin: 0 2rem;
     box-shadow: 5px 5px 10px 0;
 }
@@ -793,7 +795,7 @@ body{
         width: 95%;
     }
     .section1 {
-        padding-top: 15rem;
+        padding-top: 8rem;
         text-align: center;
     }
     .section1 .testimonial{
