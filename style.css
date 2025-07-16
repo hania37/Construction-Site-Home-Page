@@ -741,89 +741,6 @@ p {
     }
 }
 
-/* @media (max-width: 1024px) {
-    .section3 .clients{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-    .showcase-cont {
-        width: 70%;
-    }
-    
-    .section1 .rating1 {
-        left: 65%;
-    }
-    
-    .section1 .rating2 {
-        left: 55%;
-    }
-    .section2 .counts {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .section3 .lg {
-        flex: 1 1 40%;
-        margin: 1rem;
-    }
-    
-    .section6 .client-words {
-        margin: 5rem 5rem;
-    }
-    
-    .section6 .client-images {
-        margin-left: 5rem;
-        margin-right: 5rem;
-    }
-    .section7 .cta-content {
-        left: 65%;
-    }
-    .section2 .achievements{
-        flex-direction: column;
-    }
-    .section2 .achievements .details{
-        width: 100%;
-        text-align: center;
-        padding-right: 0;
-    }
-    .section2 .achievements .counts{
-        width: 100%;
-        justify-content: space-evenly;
-        margin-left: 0;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    .footer .footer-content{
-        flex-direction: column;
-    }
-    .footer .footer-content .left-sec{
-        padding-bottom: 2rem;
-    }
-    .footer .footer-content .right-sec{
-        flex-direction: row;
-        width: 100%;
-    }
-    .link-row1{
-        justify-content: center;
-    }
-} */
-/* @media (max-width: 900px){
-    .section4 .article{
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 100%;
-        display: block;
-        
-    }
-    .section4 .article:not(:last-child){
-        margin-bottom: 5rem;
-    }
-    
-    .section4 .articles .article-img{
-        box-shadow: 5px 5px 10px 0;
-    }
-} */
-
-
 @media (max-width: 800px) {
     html {
         font-size: 55%;
@@ -1031,10 +948,6 @@ p {
         justify-content: space-between;
     }
 
-    /* .section2 .counts img { */
-        /* margin-left: 3rem; */
-    /* } */
-
     .section2 .achievements .count {
         flex-direction: column;
         justify-content: center;
@@ -1160,4 +1073,124 @@ p {
 
 .menu1 {
     display: none;
+}
+@media (orientation: landscape) and (max-height: 500px){
+    .section1{
+        height: 50vmax;
+    }
+   
+    .showcase-cont {
+        padding: 1rem 0;
+    }
+    
+    .section1 .testimonial .rating1,.rating2{
+        width: 50%;
+        
+    }
+    .section1 .testimonial{
+        flex-direction: row;
+    }
+    
+    .button a {
+        width: 30%;
+        height: 30%;
+    }
+    
+    .button i {
+        margin: 2rem 0.5rem;
+    }
+    
+    .button span {
+        display: inline-block;
+        margin-bottom: 1.2rem;
+        height: 5px;
+        width: 150px;
+        border-radius: 10px;
+        background: #263640;
+    }
+    .section2 {
+        padding-top: 10rem;
+    }
+    
+    .achievements {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    
+    .details {
+        padding-top: 3rem;
+        padding-right: 5rem;
+        width: 40%;
+        height: 40vh;
+    }
+    
+    .details h2 {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    
+    .details p {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    
+    .counts {
+        width: 60%;
+        padding-top: 5rem;
+        height: 40vh;
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        gap: 10px 0;
+    }
+    
+    .counts img {
+        display: block;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+    
+    }
+    
+    .count {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .count-detail {
+        padding-left: 0.5rem;
+    }
+    
+    .count-detail p {
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    
+    .count-detail span {
+        font-weight: 600;
+        font-size: 3rem;
+    }
+    
+    .section3 {
+        padding: 20rem 0 5rem 0;
+        height: auto;
+    }
+    /* ################ navbar styling ############## */
+.navbar input[type="checkbox"],
+.navbar .hamburger {
+    display: none;
+}
+
+.logo {
+    display: none;
+    
+}
+
+.menu {
+    display: flex;
+    align-items: flex-end;
+}
+
 }
