@@ -86,8 +86,7 @@ body{
     color: rgb(44, 28, 28);
     opacity: 1;
     padding-bottom: 1px;
-    opacity: 1;
-    z-index: 50;
+    z-index: 20;
 }
 
 .navbar-cont{
@@ -111,7 +110,6 @@ body{
 
 .menu{
     display: flex;
-    order: 2;
 }
 
 .menu li{
@@ -236,6 +234,7 @@ body{
     border-radius: 50%;
     object-fit: cover;
 }
+
 /* ######### Achievements Section Styling ########### */
 .section2{
     padding-top: 15rem;
@@ -330,7 +329,7 @@ body{
     margin: auto;
     display: flex;
     /* padding-left:30px; */
-    /* margin: 0 2rem; */
+    margin: 0 2rem;
     box-shadow: 5px 5px 10px 0;
 }
 
@@ -462,7 +461,7 @@ body{
 }
 
 .client-images{
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -613,65 +612,92 @@ body{
         flex-basis: 250px;
     }
 }
-@media (max-width: 1024px){
-    .container{
-        width: 90%;
+@media (max-width: 1024px) {
+    .section3 .clients{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
     }
-    .section1 .testimonial{
-        padding-bottom: 5rem;
-        justify-items: flex-start;
-        padding-left: 5rem;
+    .showcase-cont {
+        width: 70%;
     }
-    .section1 .rating1, .rating2 {
-        position: static;
-        transform: none;
-        margin: 1rem 0;
-        width: 30%;
+    
+    .section1 .rating1 {
+        left: 65%;
     }
-    .section2{
-        height: 30vh;
+    
+    .section1 .rating2 {
+        left: 55%;
     }
-    .section2 .counts{
-        justify-content: center;
-        align-content: flex-start;
+    .section2 .counts {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .section7 .cta-bg{
+    
+    .section3 .lg {
+        flex: 1 1 40%;
+        margin: 1rem;
+    }
+    
+    .section6 .client-words {
+        margin: 5rem 5rem;
+    }
+    
+    .section6 .client-images {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    .section7 .cta-content {
+        left: 65%;
+    }
+    .section2 .achievements{
         flex-direction: column;
-        justify-items: center;
     }
-    .section7 .cta img{
-        width: 100%;
-        height: auto;
-    }
-    .section7 .cta-content{
-        margin: 5rem 5rem 0 0;
+    .section2 .achievements .details{
         width: 100%;
         text-align: center;
-        display: block;
-        position: relative;
-        height: auto;
+        padding-right: 0;
     }
-    .section7 .cta-input{
+    .section2 .achievements .counts{
+        width: 100%;
+        justify-content: space-evenly;
+        margin-left: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer .footer-content{
         flex-direction: column;
-        width: 50%;
-        margin-left: 25%;
     }
-    .section7 .cta-input input{
-        height: 50px;
+    .footer .footer-content .left-sec{
+        padding-bottom: 2rem;
     }
-    .section1 .testimonial{
-        padding-bottom: 5rem;
+    .footer .footer-content .right-sec{
         flex-direction: row;
-        justify-items: center;
+        width: 100%;
+    }
+    .link-row1{
+        justify-content: center;
     }
 }
+/* @media (max-width: 900px){
+    .section4 .article{
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        display: block;
+        
+    }
+    .section4 .article:not(:last-child){
+        margin-bottom: 5rem;
+    }
+    
+    .section4 .articles .article-img{
+        box-shadow: 5px 5px 10px 0;
+    }
+} */
+
 
 @media (max-width: 900px) {
     html {
         font-size: 55%;
-    }
-    .navbar{
-        opacity: 1;
     }
     .navbar-cont input[type='checkbox'],
     .hamburger{
@@ -725,7 +751,7 @@ body{
     .navbar .menu{
         padding-top: 100px;
         background: #fff;
-        height: 80vh;
+        height: 100vh;
         max-width: 300px;
         transform: translateX(-150%);
         display: block;
@@ -743,10 +769,10 @@ body{
     .logo{
         position: absolute;
         top: 20px;
-        left: 25rem;
+        right: 10px;
         font-size: 3rem;
-    }
-    .navbar-cont input[type='checkbox']:checked ~ .menu{
+     }
+    .navbar-cont input[type='checkbox']:checked ~ .menu-items{
         transform: translateX(0);
     }
     .navbar-cont input[type='checkbox']:checked ~ .hamburger .line1{
@@ -758,12 +784,13 @@ body{
     .navbar-cont input[type='checkbox']:checked ~ .hamburger .line3{
         transform: rotate(-45deg);
     }
-    .button1{
-        position: absolute;
-        top: 15px;
-        right:10px
+    
+    .button1 {
+        order: 1;
+        width: 100%;
+        justify-content: center;
+        position: static;
     }
-
     .container{
         width: 95%;
     }
@@ -773,12 +800,7 @@ body{
     }
     .section1 .testimonial{
         padding-bottom: 5rem;
-        justify-items: flex-start;
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        /* padding-right: 5rem; */
-        justify-content: space-between;
+        justify-items: center;
     }
     
     .section1 .showcase-cont {
@@ -806,19 +828,13 @@ body{
         margin-bottom: 2rem;
     }
     
-    .section1 .rating1, 
-    .rating2 {
-        /* position: static; */
-        /* transform: none; */
-        /* margin: 1rem 0; */
-        padding: 0.2rem;
-        flex-direction: row;
+    .section1 .rating1, .rating2 {
+        position: static;
+        transform: none;
+        margin: 1rem 0;
         width: 50%;
     }
-    .section2{
-        padding-bottom: 5rem;
-        height: 60vh;
-    }
+    
     .section2 .achievements{
         padding-top: 0;
         flex-direction: column;
@@ -834,23 +850,21 @@ body{
         margin-top: 0;
         flex-direction: column;
         width: 100%;
-        height: 100%;
+        height: 30vh;
         justify-items: center;
         margin-left: 0;
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-between;
     }
-    
+    .section2 .counts img{
+        /* margin-left: 3rem; */
+    }
     .section2 .achievements .count{
         flex-direction: column;
         justify-content: center;
-    } 
-    .section3{
-        margin-top: 5rem;
-        height: 70vh;
-    } 
+    }  
     .section3 h2{
-        padding: 5rem 0;
+        padding: 3rem 0;
     }
     
     .section3 .clients {
@@ -878,8 +892,7 @@ body{
     }
     .section6 .client-images{
         flex-direction: column;
-        margin: 0;
-        
+        /* margin-left: 0; */
     }
     .section6 .client-images .client1{
         padding-left: 2rem;
@@ -888,24 +901,43 @@ body{
     }
     .section6 .client-images .client-fback{
         width: 100%;
-        padding-left: 0;
-        margin-left: 0;
     }
     .section6 .client1 .client1-details{
         padding: 0;
         margin: 0;
     }
-    /* .section6 .client-container{
+    .section6 .client-container{
         width: 100%;
         margin: 0;
-    } */
-    .section6 .client-words{
-        padding-left: 0;
-        margin-left: 0;
-        flex-direction: column;
-        width: 100%;
     }
-    
+    .section6 .client-words{
+        padding: 1rem;
+    }
+    .section6 
+    .section7 .cta-bg{
+        flex-direction: column;
+        justify-items: center;
+    }
+    .section7 .cta img{
+        width: 100%;
+        height: auto;
+    }
+    .section7 .cta-content{
+        margin: 5rem 5rem 0 0;
+        width: 100%;
+        text-align: center;
+        display: block;
+        position: relative;
+        height: auto;
+    }
+    .section7 .cta-input{
+        flex-direction: column;
+        width: 50%;
+        margin-left: 8rem;
+    }
+    .section7 .cta-input input{
+        height: 50px;
+    }
     .footer .footer-content{
         flex-direction: column;
     }
@@ -936,12 +968,4 @@ body{
         width: 50%;
         flex-direction: row;
     }
-    
-    @media (orientation: landscape) and (max-height: 500px){
-        .section1{
-            height: 50vmax;
-        }
-        .section1 .testimonial{
-            flex-direction: row;
-        }
     }
