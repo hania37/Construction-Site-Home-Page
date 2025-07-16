@@ -305,10 +305,11 @@ body{
     font-size: 2.5rem;
     font-weight: 700;
     text-transform: uppercase;
-    margin: 10px;
+    margin: 5px;
 }
 .clients{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .client-logo-sym img{
@@ -325,7 +326,6 @@ body{
     max-width: 100%;
     margin: auto;
     display: flex;
-    flex: 1 1 300px; 
     padding-left:30px;
     margin: 0 2rem;
     box-shadow: 5px 5px 10px 0;
@@ -333,7 +333,7 @@ body{
 
 .lg p{
     padding: 5px 0;
-    width: 60%;
+    width: 50%;
     padding-left: 10px;
     margin: 10px 0;
     text-transform: uppercase;
@@ -355,7 +355,7 @@ body{
     font-weight: 400;
     font-size: 1.2rem;
     padding-bottom: 5px;
-    max-width: 30%;
+    width: 30%;
     /* flex: 1 1 300px; */
     box-shadow: none;
 }
@@ -495,7 +495,7 @@ body{
 
 /* ########### section7 styling ############ */
 .section7{
-    padding: 10rem 0;
+    padding: 5rem 0;
 }
 
 .cta-bg{
@@ -614,45 +614,37 @@ body{
     .section3 .clients{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px 50px;
-    }
-    .container {
-        width: 95%;
+        gap: 10px;
     }
     .showcase-cont {
         width: 70%;
     }
     
-    .rating1 {
+    .section1 .rating1 {
         left: 65%;
     }
     
-    .rating2 {
+    .section1 .rating2 {
         left: 55%;
     }
-    .counts {
+    .section2 .counts {
         grid-template-columns: repeat(2, 1fr);
     }
     
-    .clients {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .lg {
+    .section3 .lg {
         flex: 1 1 40%;
         margin: 1rem;
     }
     
-    .client-words {
+    .section6 .client-words {
         margin: 5rem 5rem;
     }
     
-    .client-images {
+    .section6 .client-images {
         margin-left: 5rem;
         margin-right: 5rem;
     }
-    .cta-content {
+    .section7 .cta-content {
         left: 65%;
     }
     .section2 .achievements{
@@ -671,8 +663,6 @@ body{
     }
     .footer .footer-content{
         flex-direction: column;
-       /* align-content: center;
-       justify-content: center; */
     }
     .footer .footer-content .left-sec{
         padding-bottom: 2rem;
@@ -685,7 +675,7 @@ body{
         justify-content: center;
     }
 }
-@media (max-width: 900px){
+/* @media (max-width: 900px){
     .section4 .article{
         flex-direction: column;
         flex-wrap: wrap;
@@ -697,17 +687,16 @@ body{
         margin-bottom: 5rem;
     }
     
-    .articles .article-img{
+    .section4 .articles .article-img{
         box-shadow: 5px 5px 10px 0;
     }
-}
+} */
 
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
     html {
         font-size: 55%;
     }
-    
     .navbar-cont input[type='checkbox'],
     .hamburger{
         display: block;
@@ -778,14 +767,9 @@ body{
     .logo{
         position: absolute;
         top: 20px;
-        left: 40%;
-        font-size: 3rem;
-    }
-    .button1{
-        position: absolute;
-        top: 10px;
         right: 10px;
-    }
+        font-size: 3rem;
+     }
     .navbar-cont input[type='checkbox']:checked ~ .menu-items{
         transform: translateX(0);
     }
@@ -805,48 +789,44 @@ body{
         justify-content: center;
         position: static;
     }
-    
+    .container{
+        width: 95%;
+    }
     .section1 {
         padding-top: 15rem;
         text-align: center;
     }
     .section1 .testimonial{
         padding-bottom: 5rem;
+        justify-items: center;
     }
     
-    .showcase-cont {
+    .section1 .showcase-cont {
         width: 100%;
         text-align: center;
-        margin-top: 1rem;
+        margin-top: 3rem;
     }
     
-    .main-hding {
+    .section1 .main-hding {
         font-size: 3rem;
     }
     
-    .showcase-cont p {
+    .section1 .showcase-cont p {
         width: 100%;
         margin: 0 auto;
     }
     
-    .button {
+    .section1 .button {
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
     
-    .button a {
+    .section1 .button a {
         margin-bottom: 2rem;
     }
     
-    .testimonial {
-        position: static;
-        flex-direction: column;
-        /* align-items: center; */
-        justify-content: center;
-    }
-    
-    .rating1, .rating2 {
+    .section1 .rating1, .rating2 {
         position: static;
         transform: none;
         margin: 1rem 0;
@@ -854,136 +834,136 @@ body{
     }
     
     .section2 .achievements{
-        padding-top: 10rem;
+        padding-top: 0;
         flex-direction: column;
     }
     .section2 .achievements .details{
         width: 100%;
+        flex-direction: column;
         text-align: center;
         padding-right: 0;
+        height: 20vh;
     }
     .section2 .achievements .counts{
-        height: 50vh;
+        margin-top: 0;
+        flex-direction: column;
         width: 100%;
-        justify-content: space-evenly;
-        margin: 0 15rem;
-        grid-template-columns: repeat(1, 1fr);
-        align-content: center;
+        height: 30vh;
+        justify-items: center;
+        margin-left: 0;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
     }
-    
-    .section3 h2 {
+    .section2 .counts img{
+        /* margin-left: 3rem; */
+    }
+    .section2 .achievements .count{
+        flex-direction: column;
+        justify-content: center;
+    }  
+    .section3 h2{
         padding: 3rem 0;
     }
     
     .section3 .clients {
+        display: flex;
+        width: 100%;
         flex-direction: column;
-        justify-content: space-evenly;
+        /* margin:0 2rem; */
+        padding: 0 10rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .section3 .cls-logo{
+        padding: 0 3rem;
     }
     
-    .lg {
+    .section3 .lg {
         margin: 1rem 0;
         width: 100%;
     }
-    
-    .articles {
+    .section4 .articles{
         flex-direction: column;
     }
-    
-    .article {
-        margin-bottom: 4rem;
-        max-width: 100%;
-    }
-    
-    .cons-content h2 {
-        font-size: 2.5rem;
-    }
-    
-    .client-words {
-        margin: 3rem 0;
-        padding: 2rem;
-    }
-    
-    .client-text {
-        font-size: 1.6rem;
-    }
-    
-    .client-images {
-        flex-direction: column;
-        margin: 2rem 0;
+    .section4 .article{
         width: 100%;
     }
-    
-    .client1, .client-fback {
-        width: 100%;
-        justify-content: center;
-    }
-    
-    .client-fback {
-        margin-top: 2rem;
-    }
-    
-    .section7 .cta-input{
-        border: 2px solid green;
+    .section6 .client-images{
         flex-direction: column;
-        justify-content: space-around;
-        width: 70%;
+        /* margin-left: 0; */
+    }
+    .section6 .client-images .client1{
+        padding-left: 2rem;
+        padding-bottom: 4rem;
+        width: 100%;
+    }
+    .section6 .client-images .client-fback{
+        width: 100%;
+    }
+    .section6 .client1 .client1-details{
+        padding: 0;
+        margin: 0;
+    }
+    .section6 .client-container{
+        width: 100%;
+        margin: 0;
+    }
+    .section6 .client-words{
+        padding: 1rem;
+    }
+    .section6 
+    .section7 .cta-bg{
+        flex-direction: column;
+        justify-items: center;
+    }
+    .section7 .cta img{
+        width: 100%;
+        height: auto;
     }
     .section7 .cta-content{
-        text-align: center;
-        position: static;
-        transform: none;
+        margin: 5rem 5rem 0 0;
         width: 100%;
-        padding: 2rem;
+        text-align: center;
+        display: block;
+        position: relative;
+        height: auto;
+    }
+    .section7 .cta-input{
+        flex-direction: column;
+        width: 50%;
+        margin-left: 8rem;
     }
     .section7 .cta-input input{
-        height: 50%;
-        padding: 1em;
+        height: 50px;
     }
-
-    .cta-bg {
-        height: auto;
-    }
-    .cta-bg img{
-        width: 100%;
-    }
-    
-    .cta-content h2{
-        font-size: 3.2rem;
-        text-align: center;
-    }
-    
-    .cta-input {
+    .footer .footer-content{
         flex-direction: column;
-        width: 100%;
     }
-    
-    .cta-input input {
-        width: 100%;
-        margin-bottom: 1rem;
-    }
-    
-    .footer-content {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .left-sec {
-        margin-bottom: 3rem;
-    }
-    
-    
-    .link-row1, .link-row2 {
-        justify-content: center;
-    }
-    .footer .footer-content .right-sec{
+    .footer .left-sec{
+        justify-content: flex-start;
         width: 100%;
         flex-direction: column;
     }
-    .right-sec a{
-        margin: 0 2rem;
+    .footer .left-sec .links{
+        flex-direction: column;
     }
-    .right-sec a img{
-        width: 30%;
-        height: auto;
+    .footer .left-sec .link-row1{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
     }
-}
+    .footer .left-sec .link-row2{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        padding-bottom: 2rem;
+    }
+    .footer .right-sec{
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer .right-sec-elem{
+        width: 50%;
+        flex-direction: row;
+    }
+    }
