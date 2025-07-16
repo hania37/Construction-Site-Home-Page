@@ -824,7 +824,7 @@ p {
 } */
 
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
     html {
         font-size: 55%;
     }
@@ -999,7 +999,7 @@ p {
         transform: none;
         margin: 1rem;
         margin-right: 5rem;
-        width: 100%;
+        width: auto;
     }
 
     .section2 {
@@ -1019,7 +1019,9 @@ p {
         padding-right: 0;
         height: 20vh;
     }
-
+    .details{
+        margin-bottom: 50px;
+    }
     .section2 .achievements .counts {
         margin-top: 0;
         flex-direction: column;
@@ -1039,7 +1041,9 @@ p {
         flex-direction: column;
         justify-content: center;
     }
-
+    .counts{
+        margin-bottom: 10rem;
+    }
     .section3 {
         margin-top: 5rem;
         height: 70vh;
@@ -1047,13 +1051,14 @@ p {
 
     .section3 h2 {
         padding: 5rem 0;
+        margin-top: 65px;
     }
 
     .section3 .clients {
         display: flex;
         width: 100%;
         flex-direction: column;
-        /* margin:0 2rem; */
+                /* margin: -31px 2rem; */
         padding: 0 10rem;
         justify-content: center;
         flex-wrap: wrap;
@@ -1154,7 +1159,9 @@ p {
         width: 100%;
         flex-direction: row;
     }
-
+    .section4{
+        margin-top: 12rem;
+    }
 
 }
 
